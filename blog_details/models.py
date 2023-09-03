@@ -31,7 +31,7 @@ class BlogInfo(models.Model):
 
      title = models.CharField(max_length=255,default='Unknown')
      
-     img = models.ImageField(upload_to='static/blog_imgs',null=True,blank=True)
+     img = models.ImageField(upload_to='media/blog_imgs',null=True,blank=True)
      
      desc = models.TextField(default='data not added')
      author = models.ForeignKey(User,on_delete=models.CASCADE, name='blogger')
